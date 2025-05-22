@@ -104,6 +104,7 @@ The listed instruments are the minimum required to be installed in <Labview inst
  * `Keysight/Agilent PSA/ESA-series` spectrum analyzers (connected via GPIB)
  * `Keysight/Agilent PXA-series` spectrum analyzers (connected via GPIB/Ethernet)
  * `Keysight/Agilent PSG/ESG-series` signal generators (connected via GPIB)
+ * `National Instruments NI-RFSG` signal generators (connected via PXI bus)
  * `Keysight/Agilent EXG/MXG-series` signal generators (connected via GPIB/Ethernet)
  * `Keysight/Agilent MXA-series`  signal analyzer (connected via GPIB/Ethernet)
  * `Keysight/Agilent PNA-series`  network analyzer (connected via GPIB/Ethernet)
@@ -276,8 +277,7 @@ See `LICENSE.md` (or `LICENSE.txt`) for more information.
 
 ## 🏆 Authors & Contributors
 
-* **[Your Name / Lead Developer]** - [@your_github_username](https://github.com/your_github_username)
-* *(Add other key contributors)*
+* **Aldrin Albano** - [@labviewprime](https://github.com/labviewprime)
 
 ---
 
@@ -285,16 +285,16 @@ See `LICENSE.md` (or `LICENSE.txt`) for more information.
 
 * [NI LabVIEW Community Forums](https://forums.ni.com/t5/LabVIEW/ct-p/170)
 * [JKI VI Package Manager](https://vipm.jki.net/)
-* Any specific individuals, libraries, or resources that were helpful.
+* [LAVA OpenG Project] (https://lava.org)
 
 ---
 
 ## 📞 Contact & Support
 
-**[Your Name / Project Maintainer]**
+**Aldrin Albano (labviewprime)**
 
-* Email: [your-email@example.com](mailto:your-email@example.com)
-* Project GitHub Issues: [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME/issues](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME/issues)
+* Email: labviewcoder@gmail.com (mailto:labviewcoder@gmail.com)
+* Project GitHub Issues: https://github.com/labviewprime/LVOOP_Instrument_Drivers/issues (https://github.com/labviewprime/LVOOP_Instrument_Drivers/issues)
 
 <p align="center">
   <em>If you find this LabVIEW project useful, please consider giving it a ⭐!</em>
