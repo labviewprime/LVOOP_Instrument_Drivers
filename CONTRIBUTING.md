@@ -1,4 +1,4 @@
-# Contributing to [Your LabVIEW Project Name]
+# Contributing to LVOOP_Instrument_Drivers
 
 First off, thank you for considering contributing to [Your LabVIEW Project Name]! We appreciate your interest and effort. Every contribution helps, and we are excited to welcome new ideas and improvements.
 
