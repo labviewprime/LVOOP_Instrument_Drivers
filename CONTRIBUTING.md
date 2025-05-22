@@ -95,6 +95,7 @@ To contribute code, you'll need to set up your LabVIEW development environment c
 
 ### Cloning the Repository
 
-```bash
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
-cd YOUR_REPOSITORY_NAME
+    ```bash
+    git clone [https://github.com/labviewprime/LVOOP_Instrument_Drivers.git](https://github.com/labviewprime/LVOOP_Instrument_Drivers.git)
+    cd LVOOP_Instrument_Drivers
+    ```
