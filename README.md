@@ -9,16 +9,16 @@
   </p>
 
   <p>
-    <a href="YOUR_LICENSE_URL_HERE">
+    <a href="https://github.com/labviewprime/LVOOP_Instrument_Drivers/blob/main/LICENSE.md">
       <img src="https://img.shields.io/github/license/YOUR_USERNAME/YOUR_REPOSITORY_NAME?style=for-the-badge" alt="License">
     </a>
-    <a href="https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME/releases">
+    <a href="https://github.com/labviewprime/LVOOP_Instrument_Drivers/releases">
       <img src="https://img.shields.io/github/v/release/YOUR_USERNAME/YOUR_REPOSITORY_NAME?style=for-the-badge&include_prereleases" alt="GitHub release (latest by date including pre-releases)">
     </a>
-    <a href="https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME/issues">
+    <a href="https://github.com/labviewprime/LVOOP_Instrument_Drivers/issues">
       <img src="https://img.shields.io/github/issues/YOUR_USERNAME/YOUR_REPOSITORY_NAME?style=for-the-badge" alt="GitHub issues">
     </a>
-    <a href="https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME/stargazers">
+    <a href="https://github.com/labviewprime/LVOOP_Instrument_Drivers/stargazers">
       <img src="https://img.shields.io/github/stars/YOUR_USERNAME/YOUR_REPOSITORY_NAME?style=for-the-badge" alt="GitHub stars">
     </a>
     <img src="https://img.shields.io/badge/LabVIEW-20XX_SPX-orange?style=for-the-badge&logo=nationalinstruments" alt="LabVIEW Version">
@@ -63,9 +63,11 @@
 
 ## 🌟 About The Project
 
-[LVOOP Instrument Drivers] is a LabVIEW library for [describe the primary function, e.g., instrument control, data acquisition, signal processing, test automation]. It is designed to [solve X problem] by [providing Y capabilities].
+LVOOP Instrument Drivers is a LabVIEW library to abstract test instrument vendor drivers using LVOOP Framework. This solves the need to "hard code" each test station instruments model to a particular driver.
 
-This project leverages LabVIEW's graphical programming environment to [mention specific advantages, e.g., rapidly develop intuitive user interfaces, interface with a wide range of hardware, perform complex analysis].
+Test instruments are swapped constantly by Calibration Technicians and may be replaced by an older (or newer) model of same, or different, series from the same company (e.g. Keysight or Agilent). The instrument may be swapped with one from another company (Tektronix, Anritsu, etc.)
+
+This project leverages LabVIEW's MAX (Measurement and Automation Explorer) to query the test instruments' model & type as configured for each test bench/station.
 
 ### ✨ Key Features
 
@@ -82,7 +84,7 @@ This project leverages LabVIEW's graphical programming environment to [mention s
     * `None`
 
 * **Required NI Drivers:**
-    * `NI-VISA` (Version X.Y)
+    * `NI-VISA`
     * `NI-488.2`
 
 * **VI Package Manager (VIPM) Packages:**
@@ -93,16 +95,21 @@ This project leverages LabVIEW's graphical programming environment to [mention s
 
 ### 🔩 Hardware Dependencies (Optional)
 
-While some parts of this project may run in simulation mode, full functionality requires:
+The listed instruments are the minimum required to be installed in <Labview install path><instr.lib> directory. These can be omitted from the project as needed.
 
 * **Primary Hardware:**
-    * E.g., `NI cDAQ-9178 Chassis` with `NI 9205 Analog Input Module`
+  * `Windows 10/11 PC - 64-bit`
 
 * **Instruments:**
  * `Keysight/Agilent PSA/ESA-series` spectrum analyzers (connected via GPIB)
- * `Keysight/Agilent MXA/PXA-series` spectrum analyzers (connected via GPIB/Ethernet)
+ * `Keysight/Agilent PXA-series` spectrum analyzers (connected via GPIB/Ethernet)
  * `Keysight/Agilent PSG/ESG-series` signal generators (connected via GPIB)
  * `Keysight/Agilent EXG/MXG-series` signal generators (connected via GPIB/Ethernet)
+ * `Keysight/Agilent MXA-series`  signal analyzer (connected via GPIB/Ethernet)
+ * `Keysight/Agilent PNA-series`  network analyzer (connected via GPIB/Ethernet)
+ * `Rohde & Schwarz ZVL-series`  network analyzer (connected via GPIB/Ethernet)
+ * `Keysight/Agilent U2000-series`  power sensors (connected via USB)
+ * `Rohde & Schwarz NRP-series`  power sensors (connected via USB)
 
 * **Sensors/Actuators:**
     * `None`
