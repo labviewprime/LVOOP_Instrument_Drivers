@@ -1,0 +1,124 @@
+###########################################################################
+# LabVIEW and National Instruments specific .gitignore
+#
+# Adapted for general LabVIEW projects.
+# Some entries might need to be adjusted based on your specific project
+# structure or workflow (e.g., if you ARE distributing PPLs via Git,
+# or if your repository IS a user.lib library).
+################################################################################
+
+# LabVIEW Compiled Object Cache
+# These files are specific to your machine and LabVIEW version.
+*.objcache
+/objcache/
+lvcompcache.lcd
+built_vi_files/
+*.vi.bin # For LabVIEW NXG compiled VIs, less common for traditional LabVIEW but good to have
+
+# LabVIEW Auto-Save and Backup Files
+*.bak
+*.VI~
+# LabVIEW auto-saved VIs (e.g., from LabVIEW Data\Autosave)
+# If your project is inside a directory that might be an autosave target,
+# you might need to be more specific. Generally, autosaves are in LabVIEW Data.
+
+# Build Output
+# Executables, installers, libraries, zip files, etc., created by Build Specifications
+/Builds/
+/builds/
+/dist/
+/release/
+/bin/
+/build/
+*.exe
+*.msi
+*.pkg # macOS installers
+*.dmg # macOS disk images
+*.zip # Built zip files
+*.dll # If built as DLLs from LabVIEW
+*.out # Common for some build tools
+*.app # macOS application bundles
+
+# Packed Project Libraries (PPLs) - often build artifacts
+# If you intend to distribute built .lvlibp files via Git, comment this out.
+*.lvlibp
+
+# VI Package Manager (VIPM) specific files
+# .vip files are usually build artifacts (the package itself)
+*.vip
+# .vipc (VI Package Configuration) can sometimes be committed if it defines the
+# package set for the project, but often it's environment-specific or generated.
+# Evaluate based on your workflow.
+# *.vipc
+# VIPM build directories
+/_builds/
+# VIPM caches or temporary files
+/packages/ # If VIPM downloads packages into the project locally (less common)
+
+# NI MAX (Measurement & Automation Explorer) Configuration Exports
+# These are usually system/user-specific.
+*.nce
+# Be cautious with *.ini if your project uses INI files for its own configuration.
+# Consider more specific paths if MAX config files are in your project.
+# Example: specific_max_config_dir/*.ini
+
+# LabVIEW Data Directory specific files (user-specific)
+# Generally, avoid committing changes to your user-level LabVIEW Data directory.
+# If your project IS a user.lib library, you would not ignore files within its structure.
+# This assumes the project is self-contained or uses VIPM for user.lib dependencies.
+# My Documents/LabVIEW Data/
+# ~/Documents/LabVIEW Data/
+# user.lib/ # Don't commit modifications to the user.lib *unless this IS a user.lib component*
+# vi.lib/ # NEVER commit modifications to the standard NI vi.lib
+
+# Temporary Files
+*.tmp
+*.temp
+
+# Log Files
+*.log
+lvlog.txt
+lvdiagnostics.txt
+
+# LabVIEW Project specific temporary or user setting files
+*.aliases # Project aliases file, often user-specific
+# Files or folders containing "userspecific" in their name
+
+# NI TestStand files (if they are outputs, not source)
+# *.seq.bak
+# TestStandResults/
+# *.xml # If TestStand reports are XML and considered output
+# *.html # If TestStand reports are HTML and considered output
+
+# NI DIAdem files (if they are outputs, not source)
+# Typically, TDMS data files are results/outputs.
+*.tdms
+*.tdms_index
+*.TOC # DIAdem table of contents files
+
+# NI VeriStand
+# *.nivsprj.bak
+# NI-VeriStand Cache Files/
+
+# LabVIEW Real-Time (RT) and FPGA specific
+# *.lvbitx (FPGA bitfiles, often build artifacts)
+# *.lvbit (Older FPGA bitfiles)
+# c अस्थायी/ # (Common temporary folder name on RT targets)
+# ni-rt.ini # (System configuration on RT target, usually not part of source)
+
+# General OS and IDE specific files
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+Thumbs.db
+ehthumbs.db
+eh
+
+# FreeFileSync
+*.ffs
+*.dbffs
+
+
